@@ -503,3 +503,17 @@ Retorna a tripulação da missão ordenada do operador **mais apto** ao **menos 
 ## 10. Banco de Dados (Oracle)
 
 ![Banco de Dados0](./docs/img/BDOracle.png)
+
+---
+
+## 11. Demonstração integrada (vídeo de IoT)
+
+O vídeo da entrega da matéria de IoT & IOB demonstra a camada de coleta biométrica por visão computacional do AELA funcionando em tempo real
+ - Captura de fadiga ocular (EAR)
+ - Frequência cardíaca (rPPG)
+ - Fadiga postural por câmera
+
+Sem nenhum sensor de contato. Ao cruzar o limite de fadiga, o sistema emite uma recomendação acionável de descanso indicando qual sinal a disparou.
+Esses sinais são exatamente o tipo de leitura fisiológica que esta API C# consome no endpoint POST /api/operadores/{id}/leituras para então calcular o ReadinessScore.
+
+[Vídeo de demonstração (IoT & IOB)](https://www.youtube.com/watch?v=MLCUc-tqRk4)
